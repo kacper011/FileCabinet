@@ -1,4 +1,8 @@
-package org.example.cabinet;
+package org.example.cabinet.impl;
+
+import org.example.cabinet.api.Cabinet;
+import org.example.cabinet.api.Folder;
+import org.example.cabinet.api.MultiFolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +10,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class FileCabinet implements Cabinet{
+public class FileCabinet implements Cabinet {
 
     private final List<Folder> folders;
 

@@ -1,10 +1,10 @@
 package org.example;
 
-import org.example.cabinet.FileCabinet;
-import org.example.cabinet.Folder;
-import org.example.cabinet.MultiFolder;
-import org.example.cabinet.SimpleFolder;
-import org.example.cabinet.CompositeFolder;
+import org.example.cabinet.impl.FileCabinet;
+import org.example.cabinet.api.Folder;
+import org.example.cabinet.api.MultiFolder;
+import org.example.cabinet.impl.SimpleFolder;
+import org.example.cabinet.impl.CompositeFolder;
 
 import java.util.Arrays;
 

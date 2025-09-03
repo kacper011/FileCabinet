@@ -1,4 +1,7 @@
-package org.example.cabinet;
+package org.example.cabinet.impl;
+
+import org.example.cabinet.api.Folder;
+import org.example.cabinet.api.MultiFolder;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.example.cabinet;
+package org.example.cabinet.api;
 
 public interface Folder {
 

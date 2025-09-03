@@ -1,4 +1,4 @@
-package org.example.cabinet;
+package org.example.cabinet.api;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,5 +1,10 @@
 package org.example.cabinet;
 
+import org.example.cabinet.api.Folder;
+import org.example.cabinet.api.MultiFolder;
+import org.example.cabinet.impl.CompositeFolder;
+import org.example.cabinet.impl.FileCabinet;
+import org.example.cabinet.impl.SimpleFolder;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

@@ -1,4 +1,6 @@
-package org.example.cabinet;
+package org.example.cabinet.impl;
+
+import org.example.cabinet.api.Folder;
 
 public class SimpleFolder implements Folder {
     private final String name;
