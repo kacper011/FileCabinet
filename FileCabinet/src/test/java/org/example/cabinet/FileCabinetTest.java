@@ -38,4 +38,15 @@ class FileCabinetTest {
 
         assertEquals(3, cabinet.findFoldersBySize("SMALL").size());
     }
+
+    @Test
+    void testCount() {
+        Folder f1 = new SimpleFolder("A", "SMALL");
+        Folder f2 = new SimpleFolder("B", "MEDIUM");
+        MultiFolder mf = new CompositeFolder("D", "LARGE", Arrays.asList(f2));
+
+        FileCabinet cabinet = new FileCabinet(Arrays.asList(f1, mf));
+
+        assertEquals(3, cabinet.count());
+    }
 }
