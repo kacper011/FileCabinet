@@ -24,4 +24,18 @@ class FileCabinetTest {
         Optional<Folder> notFound = cabinet.findFolderByName("X");
         assertTrue(notFound.isEmpty());
     }
+
+    @Test
+    void testFindFoldersBySize() {
+
+        Folder f1 = new SimpleFolder("A", "SMALL");
+        MultiFolder mf = new CompositeFolder("D", "SMALL", Arrays.asList(
+                new SimpleFolder("B", "MEDIUM"),
+                new SimpleFolder("C", "SMALL")
+        ));
+
+        FileCabinet cabinet = new FileCabinet(Arrays.asList(f1, mf));
+
+        assertEquals(3, cabinet.findFoldersBySize("SMALL").size());
+    }
 }
